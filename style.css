@@ -84,7 +84,7 @@ img {
   }
   /*do il bg alla prima sezione*/
   #lezioni {
-    background-color: #e8dbb5;
+    background-color: #f0e8bd;
   }
   /*do proprietà ai div dentro alle sezioni per centrarli nella pagina*/
   #lezioni .row>.left,
@@ -100,6 +100,10 @@ img {
     margin-left: 5%;
     margin-right: 5%;
   }
+  /*do lo sfondo alla seconda sezione*/
+  #steps{
+    background-color: white;
+  }
 }
 #why .row>.first,
 #why .row>.second,
@@ -111,7 +115,7 @@ img {
 }
 /*do il bg all'ultima sezione*/
    #why{
-     background-color: #e8dbb5;
+     background-color: #f0e8bd;
    }
 
 /*do proprietà a tutte le img*/
@@ -135,5 +139,4 @@ h3{
   margin-top: 0;
   margin-bottom: 0;
 }
-
 }
