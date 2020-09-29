@@ -1,0 +1,139 @@
+.row {
+  width: 992px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+/* BLOCCO LEZIONI */
+#lezioni .row>.left,
+#lezioni .row>.right {
+  width: 50%;
+  float: left;
+}
+
+#lezioni .row img {
+  /* per centrare orizzontalmente */
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#lezioni {
+  text-align: center;
+}
+
+/* BLOCCO STEPS */
+#steps .row>.left,
+#steps .row>.central,
+#steps .row>.right {
+  float: left;
+  width: 33%;
+}
+
+#steps {
+  text-align: center;
+}
+
+/* BLOCCO PERCHE */
+#why {
+  text-align: center;
+}
+
+#why .row>.first,
+#why .row>.second,
+#why .row>.third {
+  width: 100%;
+  margin-top: 80px;
+}
+
+#why .row img {
+  background-color: #428bca;
+  border-radius: 50%;
+  padding: 30px
+}
+
+/* COMMON */
+.row::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.container.grey {
+  background-color: #f9f9f9;
+}
+
+img {
+  height: 200px;
+}
+
+.clear {
+  clear: both;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 420px){
+
+/*do proprietà alla row*/
+  .row {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+  }
+  /*do il bg alla prima sezione*/
+  #lezioni {
+    background-color: #e8dbb5;
+  }
+  /*do proprietà ai div dentro alle sezioni per centrarli nella pagina*/
+  #lezioni .row>.left,
+  #lezioni .row>.right {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+#why .row>.first,
+#why .row>.second,
+#why .row>.third {
+  margin-top: 10px;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+/*do il bg all'ultima sezione*/
+   #why{
+     background-color: #e8dbb5;
+   }
+
+/*do proprietà a tutte le img*/
+#lezioni img{
+  width: 40%;
+  height: auto;
+  margin-top: 20px;
+}
+
+#steps img{
+  width: 30%;
+  height: auto;
+  margin-top: 20px;
+}
+#why img{
+  width: 10%;
+  height: auto;
+}
+/*tolgo i margini a tutti gli h3 per avvicinare i testi tra loro e per avvicinare i testi alle img sopra*/
+h3{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+}
